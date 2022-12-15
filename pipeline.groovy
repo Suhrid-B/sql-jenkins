@@ -20,6 +20,10 @@ pipeline {
   }
 }
 
+
+
+
+
   // environment {
   //   // Creates variables ARTIFACTORY=joe:supersecret, ARTIFACTORY_USR=joe, ARTIFACTORY_PSW=supersecret
   //   ARTIFACTORY = credentials('mysql-cred')
