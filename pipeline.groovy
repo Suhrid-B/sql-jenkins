@@ -28,10 +28,10 @@ pipeline {
   //   stage('run pipeline'){
   //     steps{
   //       script{
-  //         withCredentials([usernamePassword(credentialsId: 'mysql-cred', usernameVariable: 'ARTIFACTORY_USR', passwordVariable: 'ARTIFACTORY_PSW')]) {
+  //         withCredentials([usernamePassword(credentialsId: 'mysql-cred', usernameVariable: 'ARTIFACTORY_USR', passwordVariable: 'ARTIFACTORY_USR')]) {
   //           sh script: """#!/bin/bash -x
-  //           pwd
-  //           ls -ltr
+  //           chmod +x sql-query.sh
+  //           ./sql-query.sh ${params.ARTIFACTORY_USR} ${params.ARTIFACTORY_USR}
   //           """
   //         }
   //       }
